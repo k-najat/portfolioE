@@ -1,5 +1,5 @@
 // --- 1. Animation Typewriter ---
-const phrases = ["Développeuse Web Full Stack .", "Technicienne en Développement Digital  ", "Licence Fondamentale en Audiovisuel, option Son  "];
+const phrases = ["Développeuse Web Full Stack .", "Technicienne en Développement Digital  ", "Licence Fondamentale en Audiovisuel, option Son  ."];
 let i = 0, j = 0;
 let currentPhrase = [];
 let isDeleting = false, isEnd = false;
