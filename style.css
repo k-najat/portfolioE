@@ -1,0 +1,335 @@
+/* --- GÉNÉRAL --- */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.color {
+    color: rgb(36, 212, 243);
+}
+
+#logo {
+    width: 8vh;
+    height: 8vh;
+}
+
+/* --- ACCUEIL / HERO SECTION --- */
+#typewriter {
+    font-family: monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: fit-content;
+    color: #00bbff9a;
+    font-weight: bold;
+}
+
+#profil {
+    border-radius: 50%;
+    width: 70vh;
+    height: 70vh;
+    display: flex;
+    margin: auto;
+    object-fit: cover;
+    box-shadow: 20px 20px 50px rgb(36, 212, 243);
+    transition: transform 0.4s;
+}
+
+#profil:hover {
+    transform: scale(1.05);
+}
+
+#salut {
+    font-weight: bold;
+    font-size: 500%;
+}
+
+#desc {
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+#theme {
+    margin-right: 2%;
+    cursor: pointer;
+    border-radius: 80% 20%;
+}
+
+/* --- CARDS GÉNÉRALES --- */
+.card {
+    background-color: #2a2a2a !important;
+    border: 1px solid #36d4f3 !important;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.experience-card {
+    background-color: #2a2a2a !important; 
+    border: 1px solid #36d4f3 !important;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.experience-card:hover {
+    box-shadow: 0 0 15px rgba(54, 212, 243, 0.4);
+    transform: translateX(10px);
+}
+
+.education-item {
+    background-color: transparent !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateX(10px);
+}
+
+.badge.bg-info {
+    background-color: rgb(36, 212, 243) !important;
+    color: #121212 !important;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+
+/* --- COMPÉTENCES (SKILLS) --- */
+#skills-list .card {
+    border: none;
+    background-color: #2a2a2a !important;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+#skills-list .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(54, 212, 243, 0.2) !important;
+}
+
+#skills-list .card-img-top {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    object-fit: contain;
+}
+
+.progress {
+    height: 10px;
+    background-color: #444;
+}
+
+.progress-bar {
+    background-color: #36d4f3;
+}
+
+/* --- PROJECTS --- */
+.project-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #2a2a2a !important;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+.project-img-container {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    filter: brightness(0.8);
+}
+
+.project-card:hover .project-img-container img {
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-video-container {
+    height: 160px;
+    background: #000;
+}
+
+.badge-tech {
+    background-color: rgba(54, 212, 243, 0.1) !important;
+    color: #36d4f3 !important;
+    border: 1px solid rgba(54, 212, 243, 0.3) !important;
+    font-weight: 600;
+    padding: 6px 12px;
+}
+
+/* --- CONTACT & FOOTER --- */
+.form-control {
+    background-color: #1a1a1a !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.form-control:focus {
+    background-color: #1a1a1a !important;
+    color: white !important;
+    border-color: #36d4f3 !important;
+    box-shadow: 0 0 0 0.25rem rgba(54, 212, 243, 0.25) !important;
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(54, 212, 243, 0.1);
+    color: #36d4f3;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border: 1px solid rgba(54, 212, 243, 0.2);
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    background-color: #2a2a2a;
+    color: #36d4f3;
+    border: 1px solid rgba(54, 212, 243, 0.3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background-color: #36d4f3;
+    color: #121212;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(54, 212, 243, 0.3);
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #1a1a1a;
+    color: white;
+}
+
+footer .hover-color:hover {
+    color: #36d4f3 !important;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+
+/* --- ANIMATIONS DE RÉVÉLATION (REVEAL) --- */
+.reveal {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.reveal-left {
+    transform: translateX(-100px);
+}
+
+.reveal-right {
+    transform: translateX(100px);
+}
+
+.reveal-up {
+    transform: translateY(50px);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* --- THÈME CLAIR (LIGHT THEME) --- */
+body.light-theme {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+body.light-theme .form-control {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border: 1px solid #ced4da !important;
+}
+
+body.light-theme .form-control:focus {
+    border-color: #0077aa !important;
+    box-shadow: 0 0 0 0.25rem rgba(0, 119, 170, 0.25) !important;
+}
+
+body.light-theme .card,
+body.light-theme .experience-card, 
+body.light-theme #skills-list .card {
+    background-color: #ffffff !important;
+    border: 1px solid #0077aa !important;
+    color: #212529 !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+}
+
+body.light-theme .education-item h5,
+body.light-theme .education-item h4 {
+    color: #212529 !important;
+}
+
+body.light-theme .social-link {
+    background-color: #fff;
+    border: 1px solid #0077aa;
+    color: #0077aa;
+}
+
+body.light-theme .nav-link, 
+body.light-theme footer, 
+body.light-theme footer a,
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme h6,
+body.light-theme p {
+    color: #212529 !important;
+}
+
+body.light-theme footer {
+    background-color: #ffffff;
+}
+
+body.light-theme #typewriter {
+    color: #0077aa;
+}
+
